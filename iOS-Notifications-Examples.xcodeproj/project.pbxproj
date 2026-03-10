@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13EB6FB2F5EBC2100030337 /* IntervalTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13EB6FA2F5EBC2100030337 /* IntervalTriggerViewController.swift */; };
+		C1629BD92F5FE26800424AC8 /* LocationTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1629BD82F5FE26800424AC8 /* LocationTriggerViewController.swift */; };
+		C1629BDB2F5FF19700424AC8 /* EventTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1629BDA2F5FF19700424AC8 /* EventTriggerViewController.swift */; };
 		C1D62A6D2F5E3FBB00860029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D62A642F5E3FBB00860029 /* Assets.xcassets */; };
 		C1D62A6F2F5E3FBB00860029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D62A672F5E3FBB00860029 /* LaunchScreen.storyboard */; };
 		C1D62A702F5E3FBB00860029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D62A692F5E3FBB00860029 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C13EB6FA2F5EBC2100030337 /* IntervalTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTriggerViewController.swift; sourceTree = "<group>"; };
+		C1629BD82F5FE26800424AC8 /* LocationTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTriggerViewController.swift; sourceTree = "<group>"; };
+		C1629BDA2F5FF19700424AC8 /* EventTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTriggerViewController.swift; sourceTree = "<group>"; };
 		C1D62A3B2F5E3E5300860029 /* iOS-Notifications-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Notifications-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D62A632F5E3FBB00860029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D62A642F5E3FBB00860029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				C1D62A692F5E3FBB00860029 /* Main.storyboard */,
 				C1D62A6A2F5E3FBB00860029 /* MainMenuViewController.swift */,
 				C1D62A742F5E404400860029 /* TimeTriggerViewController.swift */,
+				C13EB6FA2F5EBC2100030337 /* IntervalTriggerViewController.swift */,
+				C1629BD82F5FE26800424AC8 /* LocationTriggerViewController.swift */,
+				C1629BDA2F5FF19700424AC8 /* EventTriggerViewController.swift */,
 			);
 			path = "iOS-Notifications-Examples";
 			sourceTree = "<group>";
@@ -144,10 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1629BD92F5FE26800424AC8 /* LocationTriggerViewController.swift in Sources */,
 				C1D62A752F5E404400860029 /* TimeTriggerViewController.swift in Sources */,
+				C13EB6FB2F5EBC2100030337 /* IntervalTriggerViewController.swift in Sources */,
 				C1D62A712F5E3FBB00860029 /* AppDelegate.swift in Sources */,
 				C1D62A722F5E3FBB00860029 /* MainMenuViewController.swift in Sources */,
 				C1D62A732F5E3FBB00860029 /* SceneDelegate.swift in Sources */,
+				C1629BDB2F5FF19700424AC8 /* EventTriggerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

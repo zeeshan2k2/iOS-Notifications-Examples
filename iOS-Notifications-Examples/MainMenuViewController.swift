@@ -8,6 +8,8 @@
 import UIKit
 
 class MainMenuViewController: UITableViewController {
+    
+    let storyboardRef = UIStoryboard(name: "Main", bundle: nil)
 
     let sections = [
         ("Local Notifications", [
@@ -72,12 +74,31 @@ class MainMenuViewController: UITableViewController {
 
         if indexPath.section == 0 && indexPath.row == 0 {
 
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-            let vc = storyboard.instantiateViewController(
+            let vc = storyboardRef.instantiateViewController(
                 withIdentifier: "TimeTriggerViewController"
             ) as! TimeTriggerViewController
 
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.section == 0 && indexPath.row == 1 {
+
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "IntervalTriggerViewController"
+            ) as! IntervalTriggerViewController
+
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.section == 0 && indexPath.row == 2 {
+            
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "LocationTriggerViewController"
+            ) as! LocationTriggerViewController
+
+            navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.section == 0 && indexPath.row == 3 {
+            
+            let vc = storyboardRef.instantiateViewController(
+                withIdentifier: "EventTriggerViewController"
+            ) as! EventTriggerViewController
+            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
